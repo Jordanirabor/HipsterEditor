@@ -1,0 +1,63 @@
+@import "../../../styles/breakpoint";
+@import "../../../styles/converter";
+@import "../../../styles/variables";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  text-transform: uppercase;
+  padding-bottom: to-em(15);
+  font-size: to-rem(22);
+  color: $white;
+}
+
+.wrapper {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  max-width: to-em(450);
+  padding: to-em(25 0 45);
+  justify-content: center;
+  flex-direction: column;
+  background: $cheerful-blue;
+  -webkit-box-shadow: -5px 10px 28px -14px rgba(179, 173, 179, 1);
+  -moz-box-shadow: -5px 10px 28px -14px rgba(179, 173, 179, 1);
+  box-shadow: -5px 10px 28px -14px rgba(179, 173, 179, 1);
+}
+
+.editor {
+  width: 80%;
+  height: to-em(400);
+  border-radius: 12px;
+  margin-bottom: to-em(25);
+  background-color: $white;
+}
+
+.editable {
+  width: 100%;
+  height: inherit;
+  padding: to-em(15);
+}
+
+.editable:focus {
+  outline: none;
+}
+
+.button {
+  outline: none;
+  border: none;
+  width: to-em(150);
+  height: to-em(45);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  letter-spacing: -1px;
+  background: $lemon;
+}

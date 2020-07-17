@@ -2,12 +2,23 @@
 @import "../../../styles/converter";
 @import "../../../styles/variables";
 
+
+[unresolved] {
+  display: none;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header{
+  text-transform: uppercase;
+  font-size: to-rem(22);
+  color: $white;
 }
 
 .image-wrapper {
@@ -20,12 +31,12 @@
 }
 
 .login {
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   border-radius: 12px;
   padding: to-em(15 0 45);
-  max-width: to-em(350);
+  max-width: to-em(450);
   justify-content: center;
   flex-direction: column;
   background: $cheerful-blue;
@@ -43,7 +54,7 @@
   font-size: 14px;
   border-radius: 6px;
   letter-spacing: -1px;
-  background: $bright-grey;
+  background: $lemon;
 }
 
 .button:focus{
@@ -51,41 +62,3 @@
 }
 
 
-
-
-
-///////@extend
-
-
-.wrap .inner .back {
-  top: 81px;
-  left:0;
-  text-align: right;
-  border:1px solid #EEE;
-  text-shadow:1px 1px 1px #FFF;
-  color:#333
-}
-
-.first .front {
-  background:#169916;
-}
-
-.first .back {
-  background: #44F4DA;
-}
-
-.second .front {
-  background: #EA234B;
-}
-
-.second .back {
-  background: #F7BA04;
-}
-
-.third .front {
-  background: #07DBFC;
-}
-
-.third .back {
-  background: #F990EF;
-}
