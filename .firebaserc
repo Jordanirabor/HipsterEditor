@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "edtech-test-7182a": {
+      "hosting": {
+        "edtech-test": [
+          "edtech-test-7182a"
+        ]
+      }
+    }
+  }
+}

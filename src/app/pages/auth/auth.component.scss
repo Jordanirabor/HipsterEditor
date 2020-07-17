@@ -1,0 +1,91 @@
+@import "../../../styles/breakpoint";
+@import "../../../styles/converter";
+@import "../../../styles/variables";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper {
+  max-width: 200px;
+}
+
+.image {
+  width: 100%;
+  height: to-em(200);
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: to-em(15 0 45);
+  max-width: to-em(350);
+  justify-content: center;
+  flex-direction: column;
+  background: $cheerful-blue;
+  -webkit-box-shadow: -5px 10px 28px -14px rgba(179, 173, 179, 1);
+  -moz-box-shadow: -5px 10px 28px -14px rgba(179, 173, 179, 1);
+  box-shadow: -5px 10px 28px -14px rgba(179, 173, 179, 1);
+}
+
+.button {
+  outline: none;
+  border:none;
+  width: to-em(150);
+  height: to-em(45);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  letter-spacing: -1px;
+  background: $bright-grey;
+}
+
+.button:focus{
+  outline: none;
+}
+
+
+
+
+
+///////@extend
+
+
+.wrap .inner .back {
+  top: 81px;
+  left:0;
+  text-align: right;
+  border:1px solid #EEE;
+  text-shadow:1px 1px 1px #FFF;
+  color:#333
+}
+
+.first .front {
+  background:#169916;
+}
+
+.first .back {
+  background: #44F4DA;
+}
+
+.second .front {
+  background: #EA234B;
+}
+
+.second .back {
+  background: #F7BA04;
+}
+
+.third .front {
+  background: #07DBFC;
+}
+
+.third .back {
+  background: #F990EF;
+}
