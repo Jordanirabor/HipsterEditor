@@ -6,45 +6,43 @@ import { AuthService } from './../../services/auth.service';
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss']
+  styleUrls: ['./auth.component.scss'],
 })
-
 export class AuthComponent implements OnInit {
-
-  constructor(public authService: AuthService, private router: Router) { }
+  constructor(public authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
-this.startAnimation()
+    this.startAnimation();
   }
-
-  startAnimation():void{
-
-    if (document.readyState === "interactive" || document.readyState === "complete") {
+  startAnimation(): void {
+    if (
+      document.readyState === 'interactive' ||
+      document.readyState === 'complete'
+    ) {
       resolve();
     } else {
-      window.addEventListener("DOMContentLoaded", resolve);
+      window.addEventListener('DOMContentLoaded', resolve);
     }
-    
+
     function resolve() {
-      
-      document.body.removeAttribute("unresolved");
-      
-      TweenMax.from(".container", {
+      document.body.removeAttribute('unresolved');
+
+      TweenMax.from('.container', {
         y: 500,
         opacity: 0,
         duration: 1.2,
       });
     }
-    
   }
 
   login(): void {
-    this.authService.login()
+    this.authService
+      .login()
       .then(() => {
         this.router.navigate(['editor']);
-      }).catch(err => {
+      })
+      .catch((err) => {
         console.error(err);
       });
   }
-
 }

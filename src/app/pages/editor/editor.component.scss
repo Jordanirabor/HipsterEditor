@@ -44,6 +44,7 @@
   width: 100%;
   height: inherit;
   padding: to-em(15);
+  overflow-y: scroll;
 }
 
 .editable:focus {
