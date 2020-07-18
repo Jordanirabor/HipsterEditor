@@ -11,3 +11,6 @@ npm install
 
 ng serve
 ```
+
+## Live deployment of project
+https://my-awesome-project-24057.web.app/editor
